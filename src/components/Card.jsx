@@ -4,7 +4,7 @@ const Card = ({ pokemonData, loadingStatus, infoPokemon }) => {
   return (
     <>
       {loadingStatus ? (
-        <div>Loading...</div>
+        <span className="loading mx-auto loading-ring loading-lg"></span>
       ) : (
         pokemonData.map((item) => {
           return (
